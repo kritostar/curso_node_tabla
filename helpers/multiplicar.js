@@ -12,7 +12,7 @@ const crearArchivo = async (base=5, hasta, listar)=>{
 
     if (listar) {
         console.log('=================');
-        console.log('  Tabla de',colors.underline.red(base));
+        console.log('  Table of ',colors.underline.red(base));
         console.log('=================');
         console.log(consola);
     }
