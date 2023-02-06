@@ -1,0 +1,20 @@
+{
+  "name": "03",
+  "version": "0.0.1",
+  "description": "Simple tabla de multiplicar con archivo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "base3": "node app --base=3"
+  },
+  "keywords": [
+    "multiplicar",
+    "archivo"
+  ],
+  "author": "Carolina Facchini",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "yargs": "^17.6.2"
+  }
+}
