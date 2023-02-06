@@ -1,11 +1,10 @@
 # Notas:
-Este es mi primer programa en node
+This is my first node program
 ```
 Options:
-      --help     Show help                                             [boolean]
-      --version  Show version number                                   [boolean]
-  -b, --base     Es la  base de la tabla de multiplicar.     [number] [required]
-  -l, --listar   Muestra la tabla en consola          [boolean] [default: false]
-  -h, --hasta    Hasta que numero queremos multiplicar la base
-                                                          [number] [default: 10]
+      --help     Show help                                             [boolean]       
+      --version  Show version number                                   [boolean]       
+  -b, --base     This is the multiplicand (base).            [number] [required]       
+  -l, --listar   List the table on console            [boolean] [default: false]       
+  -h, --hasta    This is the multiplier                   [number] [default: 10] 
 ```

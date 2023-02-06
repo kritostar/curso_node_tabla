@@ -3,25 +3,31 @@ const argv = require('yargs')
         alias: 'base',
         type: 'number',
         demandOption: true,
-        describe: 'Es la  base de la tabla de multiplicar.'
+        describe: 'This is the multiplicand (base).'
     })
     .option('l', {
         alias: 'listar',
         type: 'boolean',
         default: false,
-        describe: 'Muestra la tabla en consola'
+        describe: 'List the table on console'
 
     })
     .option('h', {
         alias: 'hasta',
         type: 'number',
         default: 10,
-        describe: 'Hasta que numero queremos multiplicar la base'
+        describe: 'This is the multiplier'
 
     })
     .check((argv,options) => {
         if (isNaN(argv.base)){
-            throw 'La base tiene que ser numbero';
+            throw 'Multiplicand must be a number';
+        } 
+        return true;
+    })
+    .check((argv,options) => {
+        if (isNaN(argv.hasta)){
+            throw 'Multiplier must be a number';
         } 
         return true;
     })
